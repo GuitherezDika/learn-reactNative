@@ -12,14 +12,15 @@ const HomeScreen = ({navigation}) => {
       />
 
       <Button 
-        onPress = {() => navigation.navigate('Task')}
-        title ='Please look our duty'
+        onPress = {() => navigation.navigate('List')}
+        title ='Please look our customer data'
       />
-      
-      {/* <TouchableOpacity onPress={() => props.navigation.navigate('Task') }>
-        <Text>Go to List Demo</Text>
-        <Text>Go to List Demo</Text>
-      </TouchableOpacity> */}
+
+      <Button 
+        onPress = {() => navigation.navigate('Image')}
+        title = 'How to display image?'
+      />
+
     </View>
   )
 };

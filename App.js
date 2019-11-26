@@ -4,6 +4,7 @@ import ComponentScreens from './src/screens/ComponentScreens';
 import CallText from './src/screens/CallText';
 import ListScreen from './src/screens/ListScreen';
 import CustomerList from './src/screens/3.SectionThreeTask';
+import ImageScreen from './src/screens/ImageScreen';
 
 
 const navigator = createStackNavigator(
@@ -13,6 +14,7 @@ const navigator = createStackNavigator(
     Task: CallText,
     List: ListScreen,
     Customer: CustomerList,
+    Image: ImageScreen
   },
   {
     initialRouteName: 'Home',

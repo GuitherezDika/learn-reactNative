@@ -16,7 +16,6 @@ const ListScreen = () => {
 
    return (
       <FlatList 
-         horizontal
          keyExtractor = {friends.name}
          data={friends} 
          renderItem={({item})=>{
@@ -28,8 +27,10 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
    editText: {
-      marginVertical: 40,
-      color: 'blue'
+      marginVertical: 30,
+      color: 'blue',
+      fontSize: 22,
+      fontWeight: 'bold'
    }
 });
 
