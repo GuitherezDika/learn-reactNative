@@ -19,7 +19,7 @@ const NameStyle = StyleSheet.create ({
    textStyle: {
       fontSize:20,
       color:'blue',
-   }
+   } 
 })
 
 const CallTextStyle = StyleSheet.create ({
