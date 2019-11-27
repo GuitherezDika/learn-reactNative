@@ -5,6 +5,9 @@ import CallText from './src/screens/CallText';
 import ListScreen from './src/screens/ListScreen';
 import CustomerList from './src/screens/3.SectionThreeTask';
 import ImageScreen from './src/screens/ImageScreen';
+import CounterScreen from './src/screens/CounterScreen';
+import ColorScreen from './src/screens/ColorScreen';
+import SquareScreen from './src/screens/SquareScreen';
 
 
 const navigator = createStackNavigator(
@@ -14,7 +17,10 @@ const navigator = createStackNavigator(
     Task: CallText,
     List: ListScreen,
     Customer: CustomerList,
-    Image: ImageScreen
+    Image: ImageScreen,
+    Counter: CounterScreen,
+    Color : ColorScreen,
+    Square : SquareScreen
   },
   {
     initialRouteName: 'Home',
