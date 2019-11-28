@@ -9,24 +9,8 @@ const reducer = (state, action) =>{
    //state === {red:number, green:number, blue:number}
    //action === {colorToChange: 'red'||'green' || 'blue', amount: 15||-15}
    //action === {type: 'change_red' || 'change_green'||'change_blue', payload: 15|| -15}
-   // switch(action.colorToChange) {
-   //    case 'red' :
-   //       return {...state, red: state.red+ action.amount};
-   //       //state = green:0, blue:0 auto delete case_value 'red'
-   //    case 'green':
-   //       return {...state, green: state.green+ action.amount};
-   //    case 'blue' :
-   //       return {...state, blue: state.blue + action.amount};
-   // }
-
    switch(action.type) {
       case 'change_red' :
-         // if(state.red + action.amount > 255 || state.red+action.amount < 0){
-         //    return state;
-         // } else {
-         //    return {...state, red: state.red+ action.amount}
-         // }
-         // return {...state, red: state.red+ action.amount};
 
          return state.red + action.payload > 255 || state.red+action.payload < 0 
          ? state
@@ -50,6 +34,8 @@ const reducer = (state, action) =>{
 
 const SquareScreen = () => {
    const [state, dispatch] =useReducer(reducer, {red:0, green:0, blue:0});
+   // console.log(state);
+   console.log(dispatch);
    const {red, green, blue }= state;
    //state == {red:0, green:0, blue:0}
    //dispatch = {colorToChange: 'red'||'green' || 'blue', amount: 15||-15}
