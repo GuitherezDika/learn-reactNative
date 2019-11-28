@@ -13,7 +13,7 @@ const SimplePassword = () => {
             value={password}
             onChangeText = {newValue => setPassword(newValue)}
          />
-         {password.length < 4 ? <Text>Password must be 4 at characters</Text> : null}
+         {password.length <= 4 ? <Text>Password must be 4 at characters</Text> : null}
       </View>
    )
 }

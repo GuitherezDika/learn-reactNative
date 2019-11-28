@@ -11,6 +11,8 @@ import SquareScreen from './src/screens/SquareScreen';
 import CurrentCount from './src/screens/CurrentCount';
 import TextScreen from './src/screens/TextScreen';
 import SimplePassword from './src/screens/SimplePassword';
+import BoxScreen from './src/screens/BoxScreen';
+import BoxScreenExercise from './src/screens/BoxScreenExercise';
 
 
 const navigator = createStackNavigator(
@@ -27,6 +29,8 @@ const navigator = createStackNavigator(
     Count: CurrentCount,
     Text:TextScreen,
     Password: SimplePassword,
+    Box : BoxScreen,
+    BoxExercise: BoxScreenExercise,
   },
   {
     initialRouteName: 'Home',
